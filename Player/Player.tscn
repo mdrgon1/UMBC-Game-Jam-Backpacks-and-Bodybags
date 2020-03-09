@@ -1,4 +1,4 @@
-[gd_scene load_steps=60 format=2]
+[gd_scene load_steps=59 format=2]
 
 [ext_resource path="res://Player/StateMachine.gd" type="Script" id=1]
 [ext_resource path="res://Alt Animations/Blocky Block.png" type="Texture" id=2]
@@ -37,21 +37,20 @@
 [ext_resource path="res://Player/Animations/frame0013.png" type="Texture" id=35]
 [ext_resource path="res://Player/Animations/frame0014.png" type="Texture" id=36]
 [ext_resource path="res://Player/Animations/frame0018.png" type="Texture" id=37]
-[ext_resource path="res://icon.png" type="Texture" id=38]
-[ext_resource path="res://Player/Stagger/Stagger.gd" type="Script" id=39]
-[ext_resource path="res://Player/Default/Default.gd" type="Script" id=40]
-[ext_resource path="res://Player/Default/Moving/Moving.gd" type="Script" id=41]
-[ext_resource path="res://Player/Default/Moving/Running/Running.gd" type="Script" id=42]
-[ext_resource path="res://Player/Default/Moving/Jumping/Jumping.gd" type="Script" id=43]
-[ext_resource path="res://Player/Default/Moving/Falling/Falling.gd" type="Script" id=44]
-[ext_resource path="res://Player/Default/Combat/Combat.gd" type="Script" id=45]
-[ext_resource path="res://Player/Default/Combat/Blocking/Blocking.gd" type="Script" id=46]
-[ext_resource path="res://Player/Default/Combat/Punching/Punching.gd" type="Script" id=47]
-[ext_resource path="res://Player/Charge/Charge.gd" type="Script" id=48]
-[ext_resource path="res://Player/Swap/Swap.gd" type="Script" id=49]
-[ext_resource path="res://Player/Swap/Throwing/Throwing.gd" type="Script" id=50]
-[ext_resource path="res://Player/Swap/Teleport/Teleport.gd" type="Script" id=51]
-[ext_resource path="res://Player/Label.gd" type="Script" id=52]
+[ext_resource path="res://Player/Stagger/Stagger.gd" type="Script" id=38]
+[ext_resource path="res://Player/Default/Default.gd" type="Script" id=39]
+[ext_resource path="res://Player/Default/Moving/Moving.gd" type="Script" id=40]
+[ext_resource path="res://Player/Default/Moving/Running/Running.gd" type="Script" id=41]
+[ext_resource path="res://Player/Default/Moving/Jumping/Jumping.gd" type="Script" id=42]
+[ext_resource path="res://Player/Default/Moving/Falling/Falling.gd" type="Script" id=43]
+[ext_resource path="res://Player/Default/Combat/Combat.gd" type="Script" id=44]
+[ext_resource path="res://Player/Default/Combat/Blocking/Blocking.gd" type="Script" id=45]
+[ext_resource path="res://Player/Default/Combat/Punching/Punching.gd" type="Script" id=46]
+[ext_resource path="res://Player/Charge/Charge.gd" type="Script" id=47]
+[ext_resource path="res://Player/Swap/Swap.gd" type="Script" id=48]
+[ext_resource path="res://Player/Swap/Throwing/Throwing.gd" type="Script" id=49]
+[ext_resource path="res://Player/Swap/Teleport/Teleport.gd" type="Script" id=50]
+[ext_resource path="res://Player/Label.gd" type="Script" id=51]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -168,7 +167,8 @@ width = 70
 [node name="Player1" type="KinematicBody2D"]
 script = ExtResource( 1 )
 
-[node name="PlayerSprite" type="AnimatedSprite" parent="."]
+[node name="notPlayerSprite" type="AnimatedSprite" parent="."]
+visible = false
 position = Vector2( 6.85309, -14.421 )
 scale = Vector2( 0.243459, 0.243427 )
 frames = SubResource( 1 )
@@ -204,8 +204,7 @@ scale = Vector2( 1, 1.16 )
 z_index = 1
 shape = SubResource( 4 )
 
-[node name="notPlayerSprite2" type="AnimatedSprite" parent="."]
-visible = false
+[node name="PlayerSprite" type="AnimatedSprite" parent="."]
 self_modulate = Color( 0, 2.33, 3.49, 1 )
 scale = Vector2( 1.5, 1.5 )
 z_index = 2
@@ -215,54 +214,49 @@ frame = 2
 playing = true
 script = ExtResource( 13 )
 
-[node name="PlayerSpriteTemporary" type="Sprite" parent="."]
-visible = false
-scale = Vector2( 0.84, 1 )
-texture = ExtResource( 38 )
-
 [node name="Stagger" type="Node" parent="."]
-script = ExtResource( 39 )
+script = ExtResource( 38 )
 
 [node name="Default" type="Node" parent="."]
-script = ExtResource( 40 )
+script = ExtResource( 39 )
 
 [node name="Moving" type="Node" parent="Default"]
-script = ExtResource( 41 )
+script = ExtResource( 40 )
 
 [node name="Running" type="Node" parent="Default/Moving"]
-script = ExtResource( 42 )
+script = ExtResource( 41 )
 
 [node name="Jumping" type="Node" parent="Default/Moving"]
-script = ExtResource( 43 )
+script = ExtResource( 42 )
 
 [node name="Falling" type="Node" parent="Default/Moving"]
-script = ExtResource( 44 )
+script = ExtResource( 43 )
 
 [node name="Combat" type="Node" parent="Default"]
-script = ExtResource( 45 )
+script = ExtResource( 44 )
 
 [node name="Blocking" type="Node" parent="Default/Combat"]
-script = ExtResource( 46 )
+script = ExtResource( 45 )
 
 [node name="Punching" type="Node" parent="Default/Combat"]
-script = ExtResource( 47 )
+script = ExtResource( 46 )
 
 [node name="Charge" type="Node" parent="."]
-script = ExtResource( 48 )
+script = ExtResource( 47 )
 
 [node name="Swap" type="Node" parent="."]
-script = ExtResource( 49 )
+script = ExtResource( 48 )
 
 [node name="Throwing" type="Node" parent="Swap"]
-script = ExtResource( 50 )
+script = ExtResource( 49 )
 
 [node name="Teleport" type="Node" parent="Swap"]
-script = ExtResource( 51 )
+script = ExtResource( 50 )
 
 [node name="Health" type="Sprite" parent="."]
 position = Vector2( -33.8464, -49.2107 )
 scale = Vector2( 1, 6.3668 )
 texture = SubResource( 7 )
 offset = Vector2( 35, 0 )
-script = ExtResource( 52 )
+script = ExtResource( 51 )
 [connection signal="area_entered" from="hitbox" to="." method="_on_Area2D_area_entered"]
