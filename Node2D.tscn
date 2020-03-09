@@ -1,0 +1,137 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://assets/BackGround2.png" type="Texture" id=1]
+[ext_resource path="res://assets/BackGround1.png" type="Texture" id=2]
+[ext_resource path="res://Backpack1.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/Mega Man II Dr. Wily's Castle - Metal Cover RichaadEB.wav" type="AudioStream" id=5]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 60.6272, 0.504128 )
+
+[sub_resource type="Gradient" id=2]
+
+[sub_resource type="GradientTexture" id=3]
+gradient = SubResource( 2 )
+width = 1024
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Background2" type="Sprite" parent="."]
+position = Vector2( 4.53332, 402.198 )
+scale = Vector2( 1.00282, 1.00442 )
+z_index = 5
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Background1" type="Sprite" parent="."]
+position = Vector2( 0.246459, 400.483 )
+scale = Vector2( 1.00282, 1.00442 )
+z_index = -1
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Backpack1" parent="." instance=ExtResource( 3 )]
+position = Vector2( 227.278, 202.909 )
+mass = 0.01
+gravity_scale = 10.0
+linear_damp = 14.4
+
+[node name="Backpack2" parent="." instance=ExtResource( 3 )]
+position = Vector2( -181.847, 197.723 )
+mass = 0.01
+gravity_scale = 10.0
+linear_damp = 14.4
+
+[node name="Player1" parent="." instance=ExtResource( 4 )]
+position = Vector2( 212.963, 286.492 )
+collision_mask = 3
+
+[node name="Player2" parent="." instance=ExtResource( 4 )]
+position = Vector2( -188.272, 277.944 )
+collision_mask = 3
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 0, 400 )
+current = true
+
+[node name="flor" type="RigidBody2D" parent="."]
+position = Vector2( 3.06556, 570.079 )
+collision_layer = 3
+mode = 1
+continuous_cd = 1
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="flor"]
+scale = Vector2( 6.34, 72.89 )
+shape = SubResource( 1 )
+
+[node name="Floor" type="Sprite" parent="flor"]
+visible = false
+scale = Vector2( 0.651, 32 )
+texture = SubResource( 3 )
+
+[node name="flor2" type="RigidBody2D" parent="."]
+position = Vector2( 206.128, 372.922 )
+collision_layer = 3
+mode = 1
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="flor2"]
+scale = Vector2( 1.12, 50.44 )
+shape = SubResource( 1 )
+
+[node name="Floor" type="Sprite" parent="flor2"]
+visible = false
+scale = Vector2( 0.12, 32 )
+texture = SubResource( 3 )
+
+[node name="flor3" type="RigidBody2D" parent="."]
+position = Vector2( -175.227, 372.922 )
+collision_layer = 3
+mode = 1
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="flor3"]
+scale = Vector2( 1.12, 50.44 )
+shape = SubResource( 1 )
+
+[node name="Floor" type="Sprite" parent="flor3"]
+visible = false
+scale = Vector2( 0.12, 32 )
+texture = SubResource( 3 )
+
+[node name="flor4" type="RigidBody2D" parent="."]
+position = Vector2( 17.1493, 102.347 )
+collision_layer = 3
+mode = 1
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="flor4"]
+scale = Vector2( 1.56, 51.1 )
+shape = SubResource( 1 )
+
+[node name="Floor" type="Sprite" parent="flor4"]
+visible = false
+scale = Vector2( 0.12, 32 )
+texture = SubResource( 3 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+autoplay = true
+[connection signal="teleport" from="Player1" to="Backpack1" method="_on_Player1_teleport"]
+[connection signal="throwing" from="Player1" to="Backpack1" method="_on_Player1_throwing"]
+[connection signal="teleport" from="Player2" to="Backpack2" method="_on_Player1_teleport"]
+[connection signal="throwing" from="Player2" to="Backpack2" method="_on_Player1_throwing"]

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Mega Man II Dr. Wily's Castle - Metal Cover RichaadEB.wav-4103f1c8a4104b54d3814562cf64fe37.sample"
+
+[deps]
+
+source_file="res://assets/Mega Man II Dr. Wily's Castle - Metal Cover RichaadEB.wav"
+dest_files=[ "res://.import/Mega Man II Dr. Wily's Castle - Metal Cover RichaadEB.wav-4103f1c8a4104b54d3814562cf64fe37.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
