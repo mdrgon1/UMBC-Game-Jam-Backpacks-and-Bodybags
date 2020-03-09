@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Runny Run Right.png-fd6e622ed339302e5a9ce39bf4773a60.stex"
+path="res://.import/Runny Run Right.png-b4838d8f5a468e0752985e0880c28b3b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DickAndBalls/Runny Run Right.png"
-dest_files=[ "res://.import/Runny Run Right.png-fd6e622ed339302e5a9ce39bf4773a60.stex" ]
+source_file="res://Alt Animations/Runny Run Right.png"
+dest_files=[ "res://.import/Runny Run Right.png-b4838d8f5a468e0752985e0880c28b3b.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

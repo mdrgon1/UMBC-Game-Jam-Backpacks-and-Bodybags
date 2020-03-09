@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Aimy Aim.png-fb5e83d46d37e18788b237f5d714570d.stex"
+path="res://.import/Aimy Aim.png-98bd6fbb47cb34721faeacc7f5bd6327.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DickAndBalls/Aimy Aim.png"
-dest_files=[ "res://.import/Aimy Aim.png-fb5e83d46d37e18788b237f5d714570d.stex" ]
+source_file="res://Alt Animations/Aimy Aim.png"
+dest_files=[ "res://.import/Aimy Aim.png-98bd6fbb47cb34721faeacc7f5bd6327.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

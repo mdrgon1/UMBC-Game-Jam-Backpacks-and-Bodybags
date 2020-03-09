@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Throw Frame 3.png-9eacf26b567f9e8cb773f4a8d200e786.stex"
+path="res://.import/Throw Frame 3.png-7966a2d7868a5520f462368e3148da49.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DickAndBalls/Throw Frame 3.png"
-dest_files=[ "res://.import/Throw Frame 3.png-9eacf26b567f9e8cb773f4a8d200e786.stex" ]
+source_file="res://Alt Animations/Throw Frame 3.png"
+dest_files=[ "res://.import/Throw Frame 3.png-7966a2d7868a5520f462368e3148da49.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

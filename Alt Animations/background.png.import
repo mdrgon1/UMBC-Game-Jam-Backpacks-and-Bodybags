@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/background.png-bebc737f4928e963ffde922615ceb582.stex"
+path="res://.import/background.png-2d97c56f30040490e509e3256f84073e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DickAndBalls/background.png"
-dest_files=[ "res://.import/background.png-bebc737f4928e963ffde922615ceb582.stex" ]
+source_file="res://Alt Animations/background.png"
+dest_files=[ "res://.import/background.png-2d97c56f30040490e509e3256f84073e.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

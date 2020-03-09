@@ -1,17 +1,17 @@
 [gd_scene load_steps=60 format=2]
 
 [ext_resource path="res://Player/StateMachine.gd" type="Script" id=1]
-[ext_resource path="res://DickAndBalls/Blocky Block.png" type="Texture" id=2]
-[ext_resource path="res://DickAndBalls/Punchy Punch.png" type="Texture" id=3]
-[ext_resource path="res://DickAndBalls/Runny Run Right.png" type="Texture" id=4]
-[ext_resource path="res://DickAndBalls/Jumpy Jump 2.png" type="Texture" id=5]
-[ext_resource path="res://DickAndBalls/Jumpy Jump 3.png" type="Texture" id=6]
-[ext_resource path="res://DickAndBalls/Jumpy Jump 1.png" type="Texture" id=7]
-[ext_resource path="res://DickAndBalls/Runny Run Left.png" type="Texture" id=8]
-[ext_resource path="res://DickAndBalls/Throw Frame 2.png" type="Texture" id=9]
-[ext_resource path="res://DickAndBalls/Throw Frame 3.png" type="Texture" id=10]
-[ext_resource path="res://DickAndBalls/Standy Stand.png" type="Texture" id=11]
-[ext_resource path="res://DickAndBalls/Aimy Aim.png" type="Texture" id=12]
+[ext_resource path="res://Alt Animations/Blocky Block.png" type="Texture" id=2]
+[ext_resource path="res://Alt Animations/Punchy Punch.png" type="Texture" id=3]
+[ext_resource path="res://Alt Animations/Jumpy Jump 1.png" type="Texture" id=4]
+[ext_resource path="res://Alt Animations/Jumpy Jump 2.png" type="Texture" id=5]
+[ext_resource path="res://Alt Animations/Jumpy Jump 3.png" type="Texture" id=6]
+[ext_resource path="res://Alt Animations/Runny Run Right.png" type="Texture" id=7]
+[ext_resource path="res://Alt Animations/Runny Run Left.png" type="Texture" id=8]
+[ext_resource path="res://Alt Animations/Throw Frame 2.png" type="Texture" id=9]
+[ext_resource path="res://Alt Animations/Throw Frame 3.png" type="Texture" id=10]
+[ext_resource path="res://Alt Animations/Standy Stand.png" type="Texture" id=11]
+[ext_resource path="res://Alt Animations/Aimy Aim.png" type="Texture" id=12]
 [ext_resource path="res://Player/PlayerSprite.gd" type="Script" id=13]
 [ext_resource path="res://Player/punch area/punch area.gd" type="Script" id=14]
 [ext_resource path="res://assets/reticle.png" type="Texture" id=15]
@@ -20,15 +20,15 @@
 [ext_resource path="res://Player/Animations/frame0000.png" type="Texture" id=18]
 [ext_resource path="res://Player/Animations/frame0001.png" type="Texture" id=19]
 [ext_resource path="res://Player/Animations/frame0002.png" type="Texture" id=20]
-[ext_resource path="res://Player/Animations/frame0003.png" type="Texture" id=21]
-[ext_resource path="res://Player/Animations/frame0004.png" type="Texture" id=22]
-[ext_resource path="res://Player/Animations/frame0005.png" type="Texture" id=23]
-[ext_resource path="res://Player/Animations/frame0006.png" type="Texture" id=24]
-[ext_resource path="res://Player/Animations/frame0007.png" type="Texture" id=25]
-[ext_resource path="res://Player/Animations/frame0008.png" type="Texture" id=26]
-[ext_resource path="res://Player/Animations/frame0009.png" type="Texture" id=27]
-[ext_resource path="res://Player/Animations/frame0010.png" type="Texture" id=28]
-[ext_resource path="res://Player/Animations/frame0015.png" type="Texture" id=29]
+[ext_resource path="res://Player/Animations/frame0015.png" type="Texture" id=21]
+[ext_resource path="res://Player/Animations/frame0003.png" type="Texture" id=22]
+[ext_resource path="res://Player/Animations/frame0004.png" type="Texture" id=23]
+[ext_resource path="res://Player/Animations/frame0005.png" type="Texture" id=24]
+[ext_resource path="res://Player/Animations/frame0006.png" type="Texture" id=25]
+[ext_resource path="res://Player/Animations/frame0007.png" type="Texture" id=26]
+[ext_resource path="res://Player/Animations/frame0008.png" type="Texture" id=27]
+[ext_resource path="res://Player/Animations/frame0009.png" type="Texture" id=28]
+[ext_resource path="res://Player/Animations/frame0010.png" type="Texture" id=29]
 [ext_resource path="res://Player/Animations/frame0016.png" type="Texture" id=30]
 [ext_resource path="res://Player/Animations/frame0017.png" type="Texture" id=31]
 [ext_resource path="res://Player/Animations/Stagger.png" type="Texture" id=32]
@@ -65,19 +65,19 @@ animations = [ {
 "name": "Punching",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 4 ) ],
+"frames": [ ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ) ],
+"loop": false,
+"name": "Jumping",
+"speed": 12.0
+}, {
+"frames": [ ExtResource( 7 ) ],
 "loop": true,
 "name": "Running",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 5 ), ExtResource( 6 ) ],
+"frames": [ ExtResource( 6 ), ExtResource( 5 ) ],
 "loop": true,
 "name": "Falling",
-"speed": 12.0
-}, {
-"frames": [ ExtResource( 7 ), ExtResource( 5 ), ExtResource( 6 ) ],
-"loop": false,
-"name": "Jumping",
 "speed": 12.0
 }, {
 "frames": [ ExtResource( 8 ) ],
@@ -122,20 +122,20 @@ animations = [ {
 "name": "Punching",
 "speed": 12.0
 }, {
-"frames": [ ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ) ],
+"frames": [ ExtResource( 21 ) ],
+"loop": true,
+"name": "Jumping",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ) ],
 "loop": true,
 "name": "Running",
 "speed": 12.0
 }, {
-"frames": [ ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ) ],
+"frames": [ ExtResource( 21 ), ExtResource( 30 ), ExtResource( 31 ) ],
 "loop": false,
 "name": "Falling",
 "speed": 12.0
-}, {
-"frames": [ ExtResource( 29 ) ],
-"loop": true,
-"name": "Jumping",
-"speed": 5.0
 }, {
 "frames": [ ExtResource( 32 ), ExtResource( 33 ) ],
 "loop": true,

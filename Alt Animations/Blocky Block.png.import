@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Blocky Block.png-9ab0883a136a2721bdc8ef4cf3e10c14.stex"
+path="res://.import/Blocky Block.png-70fcb937d8aa16646cd14203e365884d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DickAndBalls/Blocky Block.png"
-dest_files=[ "res://.import/Blocky Block.png-9ab0883a136a2721bdc8ef4cf3e10c14.stex" ]
+source_file="res://Alt Animations/Blocky Block.png"
+dest_files=[ "res://.import/Blocky Block.png-70fcb937d8aa16646cd14203e365884d.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

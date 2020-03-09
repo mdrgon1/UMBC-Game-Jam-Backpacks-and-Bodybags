@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Runny Run Left.png-51a33e487a234282fa87d302e51e960f.stex"
+path="res://.import/Runny Run Left.png-6a6660f9d08bee6178fdb5fca1bd2a54.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DickAndBalls/Runny Run Left.png"
-dest_files=[ "res://.import/Runny Run Left.png-51a33e487a234282fa87d302e51e960f.stex" ]
+source_file="res://Alt Animations/Runny Run Left.png"
+dest_files=[ "res://.import/Runny Run Left.png-6a6660f9d08bee6178fdb5fca1bd2a54.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
