@@ -14,3 +14,5 @@ controls for player 2:\
 	l-shift to aim\
 	q to attack, s + q to block\
 	e to throw or teleport
+
+[download link](https://github.com/mdrgon1/UMBC-Game-Jam-Backpacks-and-Bodybags/raw/master/Dogtags%20and%20Bodybags%20export.zip)
